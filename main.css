@@ -1,0 +1,147 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa; 
+    padding: 1rem;
+    align-items: center; 
+  }
+  
+
+  .navbar-brand {
+    
+  }
+  
+
+  .navbar-nav {
+    display: flex;
+    gap: 1rem; 
+   
+  }
+  
+  
+  .navbar-nav {
+    order: 2;
+  }
+  
+  
+  .navbar-brand {
+    order: 1;
+  }
+  
+
+  /* text styles */
+
+  h1,h3,h2,p {
+    color: white;
+  }
+
+  /* Home */
+
+  .carousel-item {
+    background-image: url("/assets/homehead.jpeg");
+    background-size: cover;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: auto;
+    right: auto;
+    left: 24px;
+    bottom: 24px;
+    width: auto;
+    background-color: white;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.carousel-control-next {
+    left: 84px;
+}
+
+
+.hero-image {
+  height: 90vh; 
+  position: relative;
+  bottom: -100px;
+  width: ;
+}
+
+.images {
+  height: 500px;
+  background-color: #18382B;
+  border-radius: 25px;
+  margin-top: 220px;
+  padding-top: 50px;
+}
+
+.plantF {
+  background-color: #F3F3F3;
+  border-radius: 100px;
+}
+
+.container.featured {
+  margin-bottom: -100px;
+}
+
+.slideHead {
+  margin-top: -150px
+}
+
+.theTable {
+  margin-top: 200px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.backgroundHead {
+  background-image: url('/assets/homehead.jpeg');
+}
+
+/* trips page */
+
+.trips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trip-items {
+  width: 1000px;
+  height: 300px;
+  background-color: #3e3c3c;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  /* Align items vertically at the center */
+  align-items: center;
+
+}
+
+.trips-text {
+  width: 600px;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.trips-desc {
+  margin-top: 30px;
+}
+
+.trips-img {
+  display: inline;
+  margin-bottom: 4px;
+  margin-left: 80px;
+  
+}
+
+.jupiterImg {
+  border-radius: 10px;
+}
