@@ -34,6 +34,18 @@
         </div>
       </nav>
 
+      <div class="row align-items-center mt-4">
+        <!-- Filter Radio Buttons -->
+        <div class="btn-group col-auto" role="group">
+          <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+          <label class="btn btn-outline-success" for="allTripsFilter">All Trips</label>
+          <input type="radio" class="btn-check" name="filterRadio" id="expensiveTripsFilter" autocomplete="off" value="high">
+          <label class="btn btn-outline-success" for="expensiveTripsFilter"><i class="bi-brightness-high"></i> Expensive Trips</label>
+          <input type="radio" class="btn-check" name="filterRadio" id="cheapTripsFilter" autocomplete="off" value="low">
+          <label class="btn btn-outline-success" for="cheapTripsFilter"><i class="bi-brightness-low"></i> Cheap Trips</label>
+        </div>
+      </div>
+      
       <div class="container" id="trips-container">
         <!-- Trips will be dynamically added here -->
       </div>
@@ -42,22 +54,16 @@
         <div class="trips">
           <div class="trip-items">
             <div class="trips-text">
-              <h3 class="nameText">TEN DAYS 'ROUND JUPITER</h3>
-              <h2 class="priceText"><b>R45 000</b></h2>
-              <p class="trips-desc">Embarking on a grand voyage to Jupiter, the King of the Planets, promises an unparalleled adventure through the cosmos. Our spacecraft, equipped with cutting-edge technology and guided by the brightest minds in space exploration, charts a course towards the awe-inspiring gas giant.</p>
+              <h3 class="nameText"></h3>
+              <h2 class="priceText"><b></b></h2>
+              <p class="trips-desc"></p>
             </div>
             <div class="trips-img">
-              <img src="/assets/Jupiter.webp" class="jupiterImg" width="280px" height="280px">
+              <img src="" class="jupiterImg" width="280px" height="280px">
             </div>
           </div>
         </div>
       </template>
-      
-      
-    
-
-
-
       
        <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
