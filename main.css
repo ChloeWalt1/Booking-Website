@@ -32,11 +32,15 @@
 
   /* text styles */
 
-  h1,h3,h2,p {
+  h1,h3,h2,p, h4 {
     color: white;
   }
 
   /* Home */
+
+  .carouselSection {
+    background-color: #121943;
+  }
 
   .carousel-item {
     background-image: url("/assets/homehead.jpeg");
@@ -63,7 +67,7 @@
   height: 90vh; 
   position: relative;
   bottom: -100px;
-  width: ;
+  
 }
 
 .images {
@@ -102,6 +106,28 @@
   background-image: url('/assets/homehead.jpeg');
 }
 
+.accordionSec {
+  height: 400px;
+  background: rgb(18,25,67);
+  background: linear-gradient(0deg, rgba(18,25,67,1) 0%, rgba(77,16,129,1) 100%);
+}
+
+.accordion {
+  width: 500px;
+  /* Add other styles as needed */
+}
+
+.accordionCont {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding-top: 100px;
+  
+}
+
+.questions {
+  margin-right: 20px;
+}
 /* trips page */
 
 .trips {
@@ -112,16 +138,113 @@
 
 .trip-items {
   width: 1000px;
-  height: 300px;
+  height: 410px;
   background-color: #3e3c3c;
   margin-top: 20px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
-  /* Align items vertically at the center */
   align-items: center;
+  
 
 }
+
+body {
+  background-color: initial;
+}
+
+/* Style for the selected trip card */
+.trip-selected {
+  background-color: white; 
+}
+
+.trip-selected .nameText,
+.trip-selected .priceText,
+.trip-selected .trips-desc,
+.trip-selected .trip-duration,
+.trip-selected .trip-destinations,
+.trip-selected .trip-round-trip {
+  color: black !important;
+}
+
+
+.showButton {
+  display: none;
+    background-color: #121943; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: -15px;
+}
+
+.showButton:hover {
+  background-color: #4d1081;
+}
+
+
+.tripsButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.btn-group .btn {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.btn-group .btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-group .btn:checked {
+  background-color: white;
+  color: black;
+}
+
+#allTripsFilter:checked + label {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#allTripsFilter:not(:checked) + label {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+#expensiveTripsFilter:checked + label {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#expensiveTripsFilter:not(:checked) + label {
+  background-color: rgba(0, 128, 0, 0);
+  color: white;
+  border-color: rgb(255, 255, 255);
+}
+
+/* Cheap Trips button */
+#cheapTripsFilter:checked + label {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+
+#cheapTripsFilter:not(:checked) + label {
+  background-color: rgba(0, 128, 0, 0);
+  color: white;
+  border-color: rgb(255, 255, 255);
+}
+
 
 .trips-text {
   width: 600px;
@@ -147,12 +270,13 @@
 }
 
 .weather-widget {
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  margin: 20px auto;
+  width: 400px;
+  background-color: #F3F3F3;
+  
 }
 
 .weather-widget h2 {
@@ -189,3 +313,72 @@
 .weatherP {
   color: black;
 }
+
+.weatherDisplay {
+  background-color: #121943;
+  margin: 0px;
+  width: 100vw;
+  height: 200px;
+  margin-top: -20px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+/* About us section */
+
+.aboutUs {
+  background-color: #121943;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.custom-bg {
+  height: 400px;
+  background-image: url("/assets/about\ us.png");
+  background-size: cover;
+}
+
+.padding {
+  padding-top: 50px;
+}
+
+/* trips section */
+
+.tripsSection {
+  background-color: #121943;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+.headerImage {
+  text-align: center;
+}
+
+.headerImage h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.headerImage h4 {
+  font-size: 18px;
+}
+
+
+.tripsHeader {
+  height: 600px;
+  background-image: url("/assets/tripshead.png");
+  background-size: cover;
+  background-position: center -420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+

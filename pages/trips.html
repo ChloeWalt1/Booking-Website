@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/pages/trips">Trips</a>
@@ -34,17 +34,39 @@
         </div>
       </nav>
 
+<!-- Header section -->
+<section class="tripsHeader">
+  <container class="headerImage">
+    <h1>Book your Trip</h1>
+    <h4>Space waits for no one</h4>
+  </container>
+</section>
+
+
+<!-- trips section -->
+    <section class="tripsSection">
       <div class="row align-items-center mt-4">
         <!-- Filter Radio Buttons -->
-        <div class="btn-group col-auto" role="group">
-          <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
-          <label class="btn btn-outline-success" for="allTripsFilter">All Trips</label>
-          <input type="radio" class="btn-check" name="filterRadio" id="expensiveTripsFilter" autocomplete="off" value="high">
-          <label class="btn btn-outline-success" for="expensiveTripsFilter"><i class="bi-brightness-high"></i> Expensive Trips</label>
-          <input type="radio" class="btn-check" name="filterRadio" id="cheapTripsFilter" autocomplete="off" value="low">
-          <label class="btn btn-outline-success" for="cheapTripsFilter"><i class="bi-brightness-low"></i> Cheap Trips</label>
-        </div>
-      </div>
+
+        <container class="tripsButtons">
+          <div class="btn-group col-auto" role="group">
+            <input type="radio" class="btn-check" name="filterRadio" id="allTripsFilter" value="" autocomplete="off" checked>
+            <label class="btn btn-outline-success" for="allTripsFilter">All Trips</label>
+            <input type="radio" class="btn-check" name="filterRadio" id="shortDurationFilter" autocomplete="off" value="short">
+            <label class="btn btn-outline-success" for="shortDurationFilter">Short Duration</label>
+            <input type="radio" class="btn-check" name="filterRadio" id="longDurationFilter" autocomplete="off" value="long">
+            <label class="btn btn-outline-success" for="longDurationFilter">Long Duration</label>
+            <input type="radio" class="btn-check" name="filterRadio" id="singleDestinationFilter" autocomplete="off" value="single">
+            <label class="btn btn-outline-success" for="singleDestinationFilter">Single Destination</label>
+            <input type="radio" class="btn-check" name="filterRadio" id="multipleDestinationsFilter" autocomplete="off" value="multiple">
+            <label class="btn btn-outline-success" for="multipleDestinationsFilter">Multiple Destinations</label>
+            <input type="radio" class="btn-check" name="filterRadio" id="roundTripFilter" autocomplete="off" value="roundtrip">
+            <label class="btn btn-outline-success" for="roundTripFilter">Round Trip</label>
+            <input type="radio" class="btn-check" name="filterRadio" id="rowBoatSpecialFilter" autocomplete="off" value="rowboat">
+            <label class="btn btn-outline-success" for="rowBoatSpecialFilter">Row Boat Special</label>
+          </div>
+        </container>
+        
       
       <div class="container" id="trips-container">
         <!-- Trips will be dynamically added here -->
@@ -57,6 +79,12 @@
               <h3 class="nameText"></h3>
               <h2 class="priceText"><b></b></h2>
               <p class="trips-desc"></p>
+              <!-- Additional fields -->
+              <p class="trip-duration">Duration: </p>
+              <p class="trip-destinations">Destinations: </p>
+              <p class="trip-round-trip">Round Trip: </p>
+              <!-- Add a button element initially hidden -->
+              <button class="showButton">Purchase ticket</button>
             </div>
             <div class="trips-img">
               <img src="" class="jupiterImg" width="280px" height="280px">
@@ -64,6 +92,8 @@
           </div>
         </div>
       </template>
+      
+    </section>
       
        <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
