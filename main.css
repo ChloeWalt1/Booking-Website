@@ -7,6 +7,15 @@
     align-items: center; 
   }
   
+  .logoClass {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoClass:hover {
+    transform: translateX(-50px); /* Move left by 50px */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
 
   .navbar-brand {
     
@@ -36,16 +45,86 @@
     color: white;
   }
 
+  .black {
+    color: #121943;
+    
+  }
+
+  footer .footerRight {
+    text-align: right; 
+    margin-top: -80px;
+}
+
+footer .footerRight a {
+    margin-left: 10px; 
+
+}
+  
   /* Home */
+
+
+  .carousel-item {
+    height: 90vh;
+    min-height: 300px; 
+    background-image: url("/assets/homehead.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.carousel-item:nth-child(2) {
+  background-image: none; /* Remove the background image */
+  background-color: white !important; /* Change this to your desired background color */
+}
+
+.carousel-item:nth-child(3) {
+  background-image: none; /* Remove the background image */
+  background-color: white !important; /* Change this to your desired background color */
+}
+
+.teamP {
+  color: #121943;
+}
+
+.sTwo {
+  color: #121943;
+}
+
+.slideImg2 {
+  margin-top: -250px;
+}
+
+.imgControl {
+  width: 350px;
+  height: 350px;
+}
+
+.slideTwoContent {
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  height: 90vh;
+  margin-top: -250px;
+}
+
+.pSlide2 {
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  height: 30vh;
+  margin-top: -340px;
+}
+
+
+  .body {
+    background: rgb(18,25,67);
+    background: linear-gradient(0deg, rgba(18,25,67,1) 0%, rgba(77,16,129,1) 100%);
+  }
 
   .carouselSection {
     background-color: #121943;
   }
 
-  .carousel-item {
-    background-image: url("/assets/homehead.jpeg");
-    background-size: cover;
-}
 
 .carousel-control-next, .carousel-control-prev {
     top: auto;
@@ -130,6 +209,11 @@
 }
 /* trips page */
 
+.tripsSection {
+  background: rgb(77,16,129,);
+  background: linear-gradient(0deg, rgba(77,16,129,1) 0%, rgba(18,25,67,1) 30%);
+  
+}
 .trips {
   display: flex;
   justify-content: center;
@@ -272,16 +356,21 @@ body {
 .weather-widget {
   border: 2px solid #ccc;
   padding: 20px;
-  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 100vw;
   background-color: #F3F3F3;
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
 .weather-widget h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-top: 15px;
+  
 }
 
 .weather-info {
@@ -378,6 +467,112 @@ body {
   justify-content: center;
   align-items: center;
   
+}
+/* Checkout Page */
+
+
+.introPara {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(77,16,129);
+  background: linear-gradient(0deg, rgba(77,16,129,1) 0%, rgba(18,25,67,1) 100%);
+}
+
+.introParaSpecial {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(18,25,67);
+  background: linear-gradient(0deg, rgba(18,25,67,1) 0%, rgba(77,16,129,1) 100%);
+}
+
+.introCont {
+  height: 200px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 900px;
+}
+
+.introHead {
+  color: white;
+}
+
+.introParaP  {
+  color: white;
+}
+
+.removeAllBtn {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center;
+  padding-top: 20px;
+
+}
+
+.popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Ensure the popup is on top of other content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS for the popup content */
+.popup-content {
+  width: 400px;
+  height: 220px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  color: black;
+}
+
+.popupH3 {
+  color: black;
+}
+
+.popupP {
+  color: black;
+}
+
+#remove-all-button {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #121943;
+  border:#F3F3F3;
+  
+}
+
+#purchaseBtn {
+  background-color: #121943;
+  border:#F3F3F3;
+}
+
+#closePopupBtn {
+  margin-top: 15px;
+  width: 150px;
+  background-color: #121943;
+  border:#F3F3F3;
+}
+
+
+
+.checkoutTable {
+  height: 350px;
+  background-color: #4d1081;
+
 }
 
 
