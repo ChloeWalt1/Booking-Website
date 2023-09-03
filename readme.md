@@ -3,7 +3,7 @@
 # Cruise Booking Website
 
 
-[Watch Demo >](inset link)
+[Watch Demo >](https://drive.google.com/file/d/1-KN3HoBknjPhKRHZpM3RtMA2dKXZGsO9/view?usp=drive_link)
 
 ## Table of Contents
  * Home Page
@@ -65,6 +65,8 @@ The website acts as a market place for the sale of tickets.
     CSS Gradient
     CSS Tricks
     Bootstrap
+
+    thank you for this term
 
 
 
